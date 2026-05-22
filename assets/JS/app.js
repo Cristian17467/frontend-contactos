@@ -1,6 +1,6 @@
 import ContactoAPI from "./api/contactoAPI.js";
 import ContactoUI from "../classes/ContactoUI.js";
-import { confirmar } from "../modules/helpers.js";
+import { confirmar } from "./modules/helpers.js";
 
 const modalEditar =
 new bootstrap.Modal(
