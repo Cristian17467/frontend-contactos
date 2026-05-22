@@ -1,0 +1,185 @@
+body{
+    background:
+    linear-gradient(135deg,#07111f,#111827);
+
+    min-height:100vh;
+
+    color:white;
+
+    font-family:Arial;
+}
+
+.glass-nav{
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.glass-card{
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+
+.glass-modal{
+    background:rgba(17,24,39,0.95);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:20px;
+
+    color:white;
+}
+
+.glass-footer{
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+
+.table{
+    color:white;
+}
+
+.table thead{
+    color:#60a5fa;
+}
+
+.btn-primary{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+    border:none;
+}
+
+.btn-primary:hover{
+    transform:scale(1.03);
+}
+
+.btn-warning{
+    color:white;
+}
+
+.action-btn{
+    cursor:pointer;
+
+    font-size:20px;
+
+    margin:0 10px;
+
+    transition:0.3s;
+}
+
+.action-btn:hover{
+    transform:scale(1.2);
+}
+
+.form-control{
+    background:rgba(255,255,255,0.08);
+
+    border:none;
+
+    color:white;
+}
+
+.form-control::placeholder{
+    color:#cbd5e1;
+}
+
+.form-control:focus{
+    background:rgba(255,255,255,0.12);
+
+    color:white;
+
+    box-shadow:none;
+}
+
+.btn-add{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 22px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:white;
+
+    font-weight:bold;
+
+    font-size:16px;
+
+    box-shadow:
+    0 8px 25px rgba(37,99,235,0.4);
+
+    transition:0.3s;
+}
+
+.btn-add:hover{
+
+    transform:
+    translateY(-3px)
+    scale(1.03);
+
+    box-shadow:
+    0 12px 30px rgba(124,58,237,0.5);
+
+}
+
+.btn-add i{
+
+    font-size:22px;
+
+}
+
+.modal-animate{
+
+    animation:
+    modalShow 0.4s ease;
+
+}
+
+@keyframes modalShow{
+
+    from{
+
+        transform:
+        translateY(-30px)
+        scale(0.95);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:
+        translateY(0)
+        scale(1);
+
+        opacity:1;
+
+    }
+
+}
