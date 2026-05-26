@@ -22,6 +22,8 @@ export default class ContactoUI {
                 data-id="${contacto.id_contacto}"
                 data-nombre="${contacto.nombre}"
                 data-apellido="${contacto.apellido}"
+                data-telefono="${contacto.telefono || ''}" 
+                data-email="${contacto.email || ''}" 
                 data-fecha="${contacto.fecha_nacimiento}">
             </i>
             <i class="bi bi-trash-fill text-danger action-btn eliminar"
