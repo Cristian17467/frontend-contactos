@@ -1,4 +1,4 @@
-import ContactoAPI from "./api/ContactoAPI.js";
+import ContactoAPI from "./api/api-contacto.js";
 import ContactoUI from "../classes/ContactoUI.js";
 import { confirmar } from "../modules/helpers.js";
 
