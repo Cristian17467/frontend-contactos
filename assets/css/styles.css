@@ -83,24 +83,26 @@ body{
     transform:scale(1.2);
 }
 
-.form-control{
-    background:rgba(255,255,255,0.08);
-
-    border:none;
-
-    color:white;
+.form-control, .form-select {
+    background: rgba(255,255,255,0.08);
+    border: none;
+    color: white;
 }
 
-.form-control::placeholder{
-    color:#cbd5e1;
+.form-control::placeholder {
+    color: #cbd5e1;
 }
 
-.form-control:focus{
-    background:rgba(255,255,255,0.12);
+.form-control:focus, .form-select:focus {
+    background: rgba(255,255,255,0.12);
+    color: white;
+    box-shadow: none;
+}
 
-    color:white;
-
-    box-shadow:none;
+/* Opciones del select en modo oscuro para que no se vean blancas */
+.form-select option {
+    background: #111827;
+    color: white;
 }
 
 .btn-add{

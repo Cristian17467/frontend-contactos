@@ -28,29 +28,21 @@ async function cargarContactos(){
 
 /* AGREGAR */
 
+/* AGREGAR */
 document.getElementById("btnGuardar")
-.addEventListener("click",async()=>{
+.addEventListener("click", async () => {
 
     await ContactoAPI.agregar({
-
-        nombre:
-        document.getElementById("nombre").value,
-
-        apellido:
-        document.getElementById("apellido").value,
-
-        fecha_nacimiento:
-        document.getElementById("fecha").value,
-
-        id_categoria:
-        document.getElementById("categoria").value
-
+        nombre: document.getElementById("nombre").value,
+        apellido: document.getElementById("apellido").value,
+        telefono: document.getElementById("telefono").value, // NUEVO
+        email: document.getElementById("email").value,       // NUEVO
+        fecha_nacimiento: document.getElementById("fecha").value,
+        id_categoria: document.getElementById("categoria").value
     });
 
     modalAgregar.hide();
-
     cargarContactos();
-
 });
 
 /* TABLA */
